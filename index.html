@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>صالون الأناقة للحلاقة الرجالية</title>
+<meta name="description" content="حلاقة رجالية احترافية: قص شعر، تحديد لحية، وعناية بالبشرة. احجز موعدك عبر واتساب.">
+<meta name="theme-color" content="#12233d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#12233d;--navy2:#1b3252;--red:#c8372d;--paper:#f7f7f4;--ink:#17202e;--mute:#5d6878;--line:#dfe2e6;--wa:#1faa59;
+--head:"Reem Kufi","Tajawal",Tahoma,sans-serif;--body:"Tajawal",Tahoma,Arial,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.8;font-size:17px;padding-bottom:84px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1040px;margin:auto;padding:0 20px}
+h1,h2,h3{font-family:var(--head);line-height:1.3}
+/* الشريط العلوي */
+header{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-family:var(--head);font-weight:700;font-size:20px;text-decoration:none}
+nav{display:flex;gap:18px;font-size:15px}
+nav a{text-decoration:none;opacity:.85;padding:4px 0}
+nav a:hover{opacity:1;border-bottom:2px solid var(--red)}
+@media(max-width:560px){nav a:nth-child(n+4){display:none}nav{gap:14px}}
+/* الواجهة */
+.hero{background:var(--navy);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr 120px;gap:24px;align-items:center;padding-top:44px;padding-bottom:52px}
+.hero h1{font-size:clamp(34px,8vw,64px);font-weight:700}
+.hero p{margin:14px 0 26px;max-width:30em;color:#cfd8e6;font-size:18px}
+.badge{display:inline-block;font-size:14px;padding:2px 12px;border-radius:99px;background:var(--navy2);color:#cfd8e6;margin-bottom:14px}
+.badge.open{background:#173d2a;color:#7ee2a8}
+.pole{height:260px;border-radius:60px;border:4px solid #fff;background:repeating-linear-gradient(-45deg,var(--red) 0 22px,#fff 22px 44px,#2f5fa8 44px 66px,#fff 66px 88px);background-size:100% 124px;animation:spin 3s linear infinite;justify-self:center;width:70px}
+@keyframes spin{to{background-position:0 124px}}
+@media(prefers-reduced-motion:reduce){.pole{animation:none}}
+@media(max-width:560px){.hero .wrap{grid-template-columns:1fr 64px}.pole{width:44px;height:190px}}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:50px;padding:0 24px;border-radius:12px;font-weight:700;font-size:18px;text-decoration:none;font-family:var(--body)}
+.btn.wa{background:var(--wa);color:#fff}
+.btn.ghost{border:2px solid #5b7292;color:#fff}
+/* الأقسام */
+section{padding:56px 0}
+section h2{font-size:clamp(26px,5vw,36px);margin-bottom:6px}
+.sub{color:var(--mute);margin-bottom:28px}
+.alt{background:#fff;border-block:1px solid var(--line)}
+/* الخدمات */
+.menu{list-style:none;padding:0}
+.menu li{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:center;padding:16px 0;border-bottom:1px dashed #b9c0ca}
+.menu h3{font-size:20px}
+.menu small{color:var(--mute);font-size:15px;grid-column:1}
+.price{font-family:var(--head);font-size:22px;color:var(--red);font-weight:700;grid-row:1;grid-column:2;white-space:nowrap}
+.price span{font-size:14px;color:var(--mute);font-family:var(--body);font-weight:400}
+.menu a.book{grid-column:2;grid-row:2;font-size:14px;color:var(--wa);font-weight:700;text-align:left}
+@media(min-width:720px){.menu{columns:2;column-gap:48px}.menu li{break-inside:avoid}}
+/* المعرض */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:720px){.gal{grid-template-columns:repeat(3,1fr);gap:14px}}
+.gal figure{aspect-ratio:1;border-radius:14px;overflow:hidden;position:relative;display:grid;place-items:center;color:#fff;font-family:var(--head);font-size:18px;text-align:center;padding:10px}
+.gal figure:nth-child(3n+1){background:linear-gradient(145deg,#12233d,#2f5fa8)}
+.gal figure:nth-child(3n+2){background:linear-gradient(145deg,#8f2820,#c8372d)}
+.gal figure:nth-child(3n){background:linear-gradient(145deg,#26364f,#5b7292)}
+.gal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* الساعات والموقع */
+.info{display:grid;gap:28px}
+@media(min-width:720px){.info{grid-template-columns:1fr 1fr}}
+.hours{list-style:none;padding:0}
+.hours li{display:flex;justify-content:space-between;padding:10px 14px;border-radius:10px}
+.hours li.today{background:var(--navy);color:#fff;font-weight:700}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.card p{margin-bottom:14px}
+.btn.dark{background:var(--navy);color:#fff;min-height:46px;font-size:16px}
+footer{background:var(--navy);color:#9fb0c8;text-align:center;padding:26px 20px;font-size:14px}
+/* زر واتساب العائم */
+.fab{position:fixed;inset-inline:16px;bottom:16px;z-index:30;max-width:520px;margin:auto;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top" id="logoName"></a>
+  <nav aria-label="التنقل"><a href="#services">الخدمات</a><a href="#gallery">المعرض</a><a href="#visit">المواعيد</a><a href="#visit">الموقع</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <span class="badge" id="openBadge"></span>
+    <h1 id="heroTitle"></h1>
+    <p id="heroText"></p>
+    <div class="btns">
+      <a class="btn wa" id="heroWa" href="#" rel="noopener">احجز عبر واتساب</a>
+      <a class="btn ghost" href="#services">شاهد الأسعار</a>
+    </div>
+  </div>
+  <div class="pole" aria-hidden="true"></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2>الخدمات والأسعار</h2>
+  <p class="sub">الأسعار بالريال، وتشمل المنشفة الساخنة والتعقيم.</p>
+  <ul class="menu" id="menu"></ul>
+</div></section>
+
+<section id="gallery" class="alt"><div class="wrap">
+  <h2>من أعمالنا</h2>
+  <p class="sub">نماذج من قصّات الزبائن.</p>
+  <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="visit"><div class="wrap">
+  <h2>المواعيد والموقع</h2>
+  <p class="sub">نستقبلك بموعد مسبق أو بدون موعد حسب الازدحام.</p>
+  <div class="info">
+    <ul class="hours" id="hours"></ul>
+    <div class="card">
+      <h3>العنوان</h3>
+      <p id="addr"></p>
+      <a class="btn dark" id="mapLink" target="_blank" rel="noopener" href="#">افتح الموقع في الخرائط</a>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer id="foot"></footer>
+<a class="btn wa fab" id="fabWa" href="#" rel="noopener">احجز موعدك عبر واتساب</a>
+
+<script>
+/* ============ بيانات العميل: عدّل هذا القسم فقط ============ */
+const SITE = {
+  name: "صالون الأناقة",
+  slogan: "حلاقة رجالية بلمسة دقيقة",
+  intro: "قصّة نظيفة، لحية مرتبة، وجلسة هادئة. احجز موعدك في دقيقة عبر واتساب.",
+  phone: "966500000000",            // رقم واتساب بالصيغة الدولية بدون + أو أصفار
+  address: "الرياض، حي النخيل، شارع الأمير سلطان، بجانب مغسلة الواحة",
+  mapQuery: "الرياض حي النخيل",     // كلمات البحث في خرائط جوجل
+  waMessage: "السلام عليكم، أرغب بحجز موعد",
+  services: [
+    {n:"قص شعر", d:"قص حسب الطلب مع تشذيب الأطراف", p:40},
+    {n:"تحديد لحية", d:"تحديد وتشكيل بالموس والأمواس", p:25},
+    {n:"قص شعر + لحية", d:"الباقة الأكثر طلبًا", p:60},
+    {n:"حلاقة ذقن بالموس", d:"مع منشفة ساخنة وزيت عناية", p:30},
+    {n:"تنظيف بشرة", d:"ماسك وتنظيف عميق للوجه", p:50},
+    {n:"قص أطفال", d:"للأعمار دون 12 سنة", p:30}
+  ],
+  gallery: [ // ضع اسم صورة داخل مجلد images مثل "images/1.jpg" في src، أو اتركه فارغًا
+    {t:"تدريج كلاسيكي", src:""},{t:"لحية مرتبة", src:""},{t:"قصّة عصرية", src:""},
+    {t:"حلاقة بالموس", src:""},{t:"قص أطفال", src:""},{t:"عناية بالبشرة", src:""}
+  ],
+  hours: [ // 0 = الأحد ... 6 = السبت ؛ null = مغلق
+    ["الأحد","10:00","23:00"],["الاثنين","10:00","23:00"],["الثلاثاء","10:00","23:00"],
+    ["الأربعاء","10:00","23:00"],["الخميس","10:00","24:00"],["الجمعة","16:00","24:00"],["السبت","10:00","24:00"]
+  ]
+};
+/* ============ نهاية بيانات العميل ============ */
+
+const $ = id => document.getElementById(id);
+const wa = (extra) => "https://wa.me/" + SITE.phone + "?text=" + encodeURIComponent(SITE.waMessage + (extra ? " - " + extra : ""));
+
+document.title = SITE.name + " | " + SITE.slogan;
+$("logoName").textContent = SITE.name;
+$("heroTitle").textContent = SITE.slogan;
+$("heroText").textContent = SITE.intro;
+$("heroWa").href = wa(); $("fabWa").href = wa();
+$("addr").textContent = SITE.address;
+$("mapLink").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(SITE.mapQuery);
+$("foot").textContent = "© " + new Date().getFullYear() + " " + SITE.name + " — جميع الحقوق محفوظة";
+
+$("menu").innerHTML = SITE.services.map(s =>
+  `<li><h3>${s.n}</h3><span class="price">${s.p} <span>ريال</span></span><small>${s.d}</small><a class="book" href="${wa(s.n)}" rel="noopener">احجز هذه الخدمة</a></li>`).join("");
+
+$("gal").innerHTML = SITE.gallery.map(g =>
+  `<figure>${g.src ? `<img src="${g.src}" alt="${g.t}" loading="lazy">` : ""}<span>${g.src ? "" : g.t}</span></figure>`).join("");
+
+const now = new Date(), day = now.getDay(), mins = now.getHours()*60 + now.getMinutes();
+const toMin = t => { const [h,m] = t.split(":").map(Number); return h*60+m; };
+$("hours").innerHTML = SITE.hours.map((h,i) =>
+  `<li class="${i===day?"today":""}"><span>${h[0]}</span><span>${h[1] ? h[1]+" – "+h[2] : "مغلق"}</span></li>`).join("");
+const t = SITE.hours[day], open = t && t[1] && mins >= toMin(t[1]) && mins < toMin(t[2]);
+$("openBadge").textContent = open ? "مفتوح الآن" : "مغلق حاليًا";
+$("openBadge").className = "badge" + (open ? " open" : "");
+</script>
+</body>
+</html>
